@@ -8,7 +8,7 @@ from routes.myfile import music_bp
 app = Flask(__name__)
 
 # Allow CORS for the frontend origin
-CORS(app, resources={r"/api/*": {"origins": "https://music-hunting-v.vercel.app"}})
+CORS(app, resources={"/api/*": {"origins": "https://music-hunting-v.vercel.app"}})
 #CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
 
 # Register blueprints
